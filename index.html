@@ -5,16 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
     <script src="file.js" defer></script>
 </head>
 <body>
+    <div class="titleDiv">
+        <div class="title">
+            <p>Etch-a-Skretch</p>
+        </div>
+    </div>
+    <div class="page">
     <div class="info">
-        <label for="colorPicker">Choose a color:</label>
-        <input type="color" id="colorPicker" name="colorPicker">
+        <div class="info0">
+            <p>Eraser mode: </p>
+            <label class="switch">
+            <input type="checkbox">
+            <span class="slider-round"></span>
+            </label>
+        </div>
+        <div class="info4">
+            <p>Turn off the borders: </p>
+            <label class="switch">
+            <input type="checkbox">
+            <span class="slider-round"></span>
+            </label>
+        </div>
+        <div class="info1">
+            <p>Choose a color for square in grid: </p>
+            <input type="color" id="colorPicker" name="colorPicker">
+        </div>
+        <div class="info2">
+            <p>Choose a color for background in grid: </p>
+            <input type="color" id="backgroundPicker" name="backgroundPicker">
+        </div>
     </div>
     <div class = "main">
     <div class="grid">
-        <div class="row">
+        <div class="row-initial" id="first">
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
@@ -32,7 +59,7 @@
             <div class="square"></div>
             <div class="square"></div>
         </div>
-        <div class="row">
+        <div class="row-initial">
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
@@ -50,7 +77,7 @@
             <div class="square"></div>
             <div class="square"></div>
         </div>
-        <div class="row">
+        <div class="row-initial">
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
@@ -68,7 +95,7 @@
             <div class="square"></div>
             <div class="square"></div>
         </div>
-        <div class="row">
+        <div class="row-initial">
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
@@ -86,7 +113,7 @@
             <div class="square"></div>
             <div class="square"></div>
         </div>
-        <div class="row">
+        <div class="row-initial">
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
@@ -104,7 +131,7 @@
             <div class="square"></div>
             <div class="square"></div>
         </div>
-        <div class="row">
+        <div class="row-initial">
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
@@ -122,7 +149,7 @@
             <div class="square"></div>
             <div class="square"></div>
         </div>
-        <div class="row">
+        <div class="row-initial">
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
@@ -140,7 +167,7 @@
             <div class="square"></div>
             <div class="square"></div>
         </div>
-        <div class="row">
+        <div class="row-initial">
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
@@ -158,7 +185,7 @@
             <div class="square"></div>
             <div class="square"></div>
         </div>
-        <div class="row">
+        <div class="row-initial">
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
@@ -176,7 +203,7 @@
             <div class="square"></div>
             <div class="square"></div>
         </div>
-        <div class="row">
+        <div class="row-initial">
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
@@ -194,7 +221,7 @@
             <div class="square"></div>
             <div class="square"></div>
         </div>
-        <div class="row">
+        <div class="row-initial">
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
@@ -212,7 +239,7 @@
             <div class="square"></div>
             <div class="square"></div>
         </div>
-        <div class="row">
+        <div class="row-initial">
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
@@ -230,7 +257,7 @@
             <div class="square"></div>
             <div class="square"></div>
         </div>
-        <div class="row">
+        <div class="row-initial">
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
@@ -248,7 +275,7 @@
             <div class="square"></div>
             <div class="square"></div>
         </div>
-        <div class="row">
+        <div class="row-initial">
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
@@ -266,7 +293,7 @@
             <div class="square"></div>
             <div class="square"></div>
         </div>
-        <div class="row">
+        <div class="row-initial">
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
@@ -284,7 +311,7 @@
             <div class="square"></div>
             <div class="square"></div>
         </div>
-        <div class="row">
+        <div class="row-initial">
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
@@ -306,6 +333,7 @@
     <div class="slidecontainer">
         <input type="range" min="8" max="50" value="16" class="slider" id="myRange">
         <p>16 x 16 grid</p>
+    </div>
     </div>
     </div>
 </body>
