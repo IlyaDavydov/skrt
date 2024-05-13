@@ -1,0 +1,12 @@
+This project has been a great opportunity for me to reinforce my knowledge in CSS, HTML, and JS.
+It's been my first time working extensively with the DOM, mastering basic JS concepts, and implementing many interesting features. 
+Transforming the grid was indeed a challenging task for me at this stage, but also quite fascinating.
+In this project, I avoided using grid and relied solely on flexbox to deepen my understanding of this technology, which made the task a bit more complex.
+
+Functionality:
+
+Dynamic grid resizing
+"Drawing" functionality on hover over the grid
+Erasing functionality
+Toggling grid borders
+Changing colors for background and drawing
